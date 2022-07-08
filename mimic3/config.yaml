@@ -19,4 +19,6 @@ schema:
   message: "str?"
 ports:
   59125/tcp: 59125
+ports_description:
+  59125/tcp: mimic3 port (http/tts)
 image: "ghcr.io/RudolfRendier/{arch}-addon-mimic3"
