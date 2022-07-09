@@ -16,4 +16,4 @@ message=$(bashio::config 'message')
 bashio::log.info "${message:="Hello World..."}"
 
 ## Run your program
-exec /usr/bin/my_program
+exec /home/mimic3/app/.venv/bin/python3 -m mimic3_http

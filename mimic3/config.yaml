@@ -1,0 +1,24 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: mimic3 add-on
+version: "0.0.1"
+slug: mimic3
+description: mimic3 add-on
+url: "https://github.com/RudolfRendier/addon-mimic3/tree/main/example"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+ports:
+  59125/tcp: 59125
+ports_description:
+  59125/tcp: mimic3 port (http/tts)
+image: "ghcr.io/RudolfRendier/{arch}-addon-mimic3"
